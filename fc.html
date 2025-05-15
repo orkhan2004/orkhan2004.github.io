@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Candidates – Opoint Consulting</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url("backphoto.png") no-repeat center center fixed;
+        background-size: cover;
+        color: #1d1d1d;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        flex-wrap: wrap;
+      }
+
+      header img {
+        height: 80px;
+        width: auto;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-weight: bold;
+        background: yellow;
+        border: none;
+        padding: 8px 14px;
+        cursor: pointer;
+        margin-left: auto;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #003366;
+      }
+
+      nav a:hover {
+        color: #0077cc;
+      }
+
+      .lang-inline-button {
+        background-color: #007bff;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .lang-inline-button:hover {
+        background-color: #339cff;
+        transform: scale(1.1);
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        color: #003366;
+      }
+
+      .vacancy-box {
+        text-align: center;
+        font-size: 22px;
+        padding: 30px;
+        background-color: #f4f9ff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+
+      footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+        font-size: 14px;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+          align-self: flex-end;
+          margin-top: 10px;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          background: white;
+          margin-top: 10px;
+          border-top: 1px solid #ddd;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          padding: 10px 15px;
+          border-top: 1px solid #eee;
+        }
+
+        header img {
+          height: 50px;
+        }
+
+        footer {
+          font-size: 12px;
+          padding: 20px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Opoint Logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+      <nav id="main-nav">
+        <a href="fcru.html" class="lang-inline-button">RU</a>
+        <a href="main.html">About Us</a>
+        <a href="fc.html">For Candidates</a>
+        <a href="fp.html">For Agencies</a>
+      </nav>
+    </header>
+
+    <section class="vacancy-box">
+      <strong>7 vacancies currently available</strong><br />
+      <p>
+        Our job listings are currently under moderation. Please check back again
+        soon to view updated offers.
+      </p>
+    </section>
+
+    <section>
+      <h2>Candidate Criteria</h2>
+      <ul>
+        <li>
+          <strong>Legal & Travel Eligibility:</strong> Clean legal record, no
+          serious debts, and eligible to travel to the EU.
+        </li>
+        <li>
+          <strong>Work Readiness:</strong> Prepared physically and mentally for
+          logistics, production, or construction jobs.
+        </li>
+        <li>
+          <strong>Responsibility & Attitude:</strong> Professional, disciplined,
+          and serious about the process.
+        </li>
+        <li>
+          <strong>Language Ability:</strong> Good knowledge of English, Russian,
+          or a local language is required.
+        </li>
+        <li>
+          <strong>Flexibility:</strong> Ready to flexible hours and shifts.
+        </li>
+        <li>
+          <strong>Document Honesty:</strong> All documents must be genuine —
+          false data leads to disqualification.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Details</h2>
+      <p><strong>Director:</strong> Orkhan Baylarli</p>
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:+994555622647">+994 55 562 26 47</a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:opointconsulting@gmail.com">
+          contact@opointconsulting.com</a
+        >
+      </p>
+    </section>
+
+    <footer>
+      Opoint Consulting MMC<br />
+      Address: AZ2500, Goygol city, Firuzabad 01, Azerbaijan<br />
+      Tax Number (VÖEN): 7601367691<br />
+      &copy; 2025 Opoint Consulting. All rights reserved.
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("main-nav").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

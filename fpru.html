@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для агентств – Opoint Consulting</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url("backphoto.png") no-repeat center center fixed;
+        background-size: cover;
+        color: #1d1d1d;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        flex-wrap: wrap;
+      }
+
+      header img {
+        height: 80px;
+        width: auto;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-weight: bold;
+        background: yellow;
+        border: none;
+        padding: 8px 14px;
+        cursor: pointer;
+        margin-left: auto;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #003366;
+      }
+
+      nav a:hover {
+        color: #0077cc;
+      }
+
+      .lang-inline-button {
+        background-color: #007bff;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .lang-inline-button:hover {
+        background-color: #339cff;
+        transform: scale(1.1);
+      }
+
+      .subnav {
+        background-color: rgba(255, 255, 255, 0.95);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .subnav a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #003366;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 6px;
+      }
+
+      .subnav a:hover {
+        color: #0077cc;
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        color: #003366;
+        text-align: left;
+      }
+
+      footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+        font-size: 14px;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+          align-self: flex-end;
+          margin-top: 10px;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          background: white;
+          margin-top: 10px;
+          border-top: 1px solid #ddd;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          padding: 10px 15px;
+          border-top: 1px solid #eee;
+        }
+
+        header img {
+          height: 50px;
+        }
+
+        footer {
+          font-size: 12px;
+          padding: 20px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Логотип Opoint" />
+      <button class="menu-toggle" onclick="toggleMenu()">Меню</button>
+      <nav id="main-nav">
+        <a href="fp.html" class="lang-inline-button">ENG</a>
+        <a href="mainru.html">О нас</a>
+        <a href="fcru.html">Кандидатам</a>
+        <a href="fpru.html">Агентствам</a>
+      </nav>
+    </header>
+
+    <div class="subnav">
+      <a href="#why">Почему Opoint Consulting</a>
+      <a href="#foreigners">Почему иностранные рабочие</a>
+      <a href="#expect">Наши ожидания</a>
+      <a href="#criteria">Стандарты подбора</a>
+    </div>
+
+    <section id="why">
+      <h2>Почему Opoint Consulting</h2>
+      <p>
+        В Opoint Consulting мы берём на себя практически все этапы
+        международного рекрутинга, чтобы агентства могли сосредоточиться на
+        своей основной деятельности.
+      </p>
+      <p>
+        От подбора подходящих кандидатов до их подготовки, сопровождения по
+        визовым и юридическим вопросам — мы предлагаем комплексную и
+        организованную систему поддержки. Каждый кандидат проходит
+        предварительный отбор и получает полную информацию о рабочих
+        обязанностях, условиях проживания и юридических требованиях.
+      </p>
+      <p>
+        Единственная задача работодателя — подать заявку на разрешение на работу
+        и оформить необходимые документы. Всё остальное — объяснение условий
+        контракта, сбор документов, соответствие посольским требованиям — делаем
+        мы.
+      </p>
+      <p>
+        Мы также требуем, чтобы каждый кандидат владел хотя бы одним
+        международным языком — английским или русским — для обеспечения
+        эффективной коммуникации с первого дня.
+      </p>
+      <p>
+        Наши процедуры полностью соответствуют законодательству и требованиям
+        посольств. Мы не представляем и не влияем на решения посольств — наша
+        задача заключается в том, чтобы все документы были подготовлены
+        грамотно, точно и в соответствии с правилами.
+      </p>
+      <p>
+        <strong
+          >Мы экономим ваше время, снимаем стресс и помогаем решить кадровые
+          потребности быстро и надёжно.</strong
+        >
+      </p>
+    </section>
+
+    <section id="foreigners">
+      <h2>Почему иностранные рабочие</h2>
+      <p>
+        Многие агентства в ЕС всё чаще сталкиваются с нехваткой надёжных,
+        долгосрочных сотрудников — особенно для физически сложной или
+        высокооборотной работы. В то же время, квалифицированные и
+        мотивированные кандидаты из таких стран, как Азербайджан, активно ищут
+        легальную работу за границей с лучшей оплатой и стабильностью.
+      </p>
+      <p>
+        Такие кандидаты, как правило, более дисциплинированы, сосредоточены на
+        работе и быстро адаптируются. При должной юридической поддержке и
+        информировании они приезжают с чётким намерением: работать.
+      </p>
+      <p>
+        Opoint Consulting гарантирует, что каждый иностранец: тщательно отобран
+        по потребностям работодателя, проинформирован о должностных
+        обязанностях, условиях проживания и юридических правилах, и обеспечен
+        визовой и документальной поддержкой.
+      </p>
+      <p>
+        Мы действуем в полном соответствии с международным трудовым
+        законодательством и визовыми требованиями посольств. Хотя мы не являемся
+        официальным представителем ни одного посольства, мы обеспечиваем полную
+        легальность и корректность процесса для всех сторон.
+      </p>
+    </section>
+
+    <section id="expect">
+      <h2>Наши ожидания</h2>
+      <p>
+        Мы уверены, что эффективное сотрудничество основывается на взаимном
+        профессионализме, прозрачности и уважении к законодательству.
+      </p>
+      <p>
+        Перед началом работы мы просим агентства: быть официально
+        зарегистрированными и лицензированными, соблюдать местное трудовое
+        законодательство и вовремя и корректно предоставлять все необходимые
+        документы кандидатов.
+      </p>
+      <p>
+        В некоторых случаях от кандидата может быть запрошен небольшой
+        возвратный депозит для покрытия подтверждённых организационных расходов.
+        Однако мы категорически не поддерживаем завышенные комиссии или
+        спекуляции на документах — мы за прозрачность и честность.
+      </p>
+      <p>
+        Также мы ожидаем, что агентства предоставят: безопасное и чистое жильё,
+        чёткое описание условий труда и контракта, базовую логистику (например,
+        трансфер) и уважительное рабочее отношение.
+      </p>
+      <p>
+        Мы ценим открытую коммуникацию и гибкость. Когда агентство и кандидат
+        получают поддержку с обеих сторон, результат — всегда успешный.
+      </p>
+    </section>
+
+    <section id="criteria">
+      <h2>Стандарты подбора</h2>
+      <ul>
+        <li>
+          <strong>Юридическая регистрация:</strong> Агентство должно быть
+          официально зарегистрировано и лицензировано.
+        </li>
+        <li>
+          <strong>Прозрачные контракты:</strong> Заработная плата и условия
+          работы должны быть описаны в письменном виде.
+        </li>
+        <li>
+          <strong>Проживание:</strong> Должно быть безопасным, чистым и
+          находиться недалеко от места работы.
+        </li>
+        <li>
+          <strong>Языковая поддержка:</strong> В штате должен быть сотрудник,
+          говорящий на английском или русском.
+        </li>
+        <li>
+          <strong>Репутация:</strong> Отсутствие серьёзных нарушений и частых
+          жалоб.
+        </li>
+        <li>
+          <strong>Открытость:</strong> Агентство должно быть на связи,
+          оперативно и понятно отвечать в ходе процесса.
+        </li>
+      </ul>
+      <p>
+        Мы стремимся к долгосрочному сотрудничеству с агентствами, которые ценят
+        людей и уважают правила. Тогда выигрывают все — работодатель, работник и
+        вы.
+      </p>
+    </section>
+
+    <section>
+      <h2>Контактная информация</h2>
+      <p><strong>Директор:</strong> Orkhan Baylarli</p>
+      <p>
+        <strong>Телефон:</strong>
+        <a href="tel:+994555622647">+994 55 562 26 47</a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:opointconsulting@gmail.com"
+          >contact@opointconsulting.com</a
+        >
+      </p>
+    </section>
+
+    <footer>
+      Opoint Consulting MMC<br />
+      Адрес: AZ2500, город Гёйгёль, Фирузабад 01, Азербайджан<br />
+      Налоговый номер (VÖEN): 7601367691<br />
+      &copy; 2025 Opoint Consulting. Все права защищены.
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("main-nav").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

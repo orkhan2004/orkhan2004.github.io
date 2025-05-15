@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opoint Consulting – О нас</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url("backphoto.png") no-repeat center center fixed;
+        background-size: cover;
+        color: #1d1d1d;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: 2px solid #e0e0e0;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        height: 100px;
+        width: auto;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #003366;
+        padding: 10px;
+      }
+
+      nav a:hover {
+        color: #0077cc;
+      }
+
+      .lang-inline-button {
+        background-color: #007bff;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .lang-inline-button:hover {
+        background-color: #339cff;
+        transform: scale(1.1);
+      }
+
+      .menu-button {
+        display: none;
+        background-color: #ff0;
+        border: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          background: white;
+          border-top: 1px solid #ccc;
+          padding: 10px 0;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        .menu-button {
+          display: block;
+          margin-left: auto;
+        }
+
+        .logo {
+          height: 90px;
+          width: 180px;
+        }
+
+        footer {
+          font-size: 12px;
+        }
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        border-radius: 12px;
+      }
+
+      .about-photo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto 30px;
+      }
+
+      h2 {
+        color: #003366;
+        text-align: left;
+      }
+
+      footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Логотип Opoint" class="logo" />
+      <button class="menu-button" onclick="toggleMenu()">Меню</button>
+      <nav id="main-nav">
+        <a href="main.html" class="lang-inline-button">ENG</a>
+        <a href="mainru.html">О нас</a>
+        <a href="fcru.html">Кандидатам</a>
+        <a href="fpru.html">Агентствам</a>
+      </nav>
+    </header>
+
+    <section>
+      <img src="photo1.jpg" alt="Визуал о нас" class="about-photo" />
+      <h2>О нас</h2>
+
+      <p>
+        <strong>Opoint Consulting MMC</strong> — это платформа, соединяющая
+        соискателей и кадровые агентства по всей Европе. Мы стремимся упростить,
+        обезопасить и сделать международное трудоустройство более эффективным
+        для всех участников процесса.
+      </p>
+      <p>
+        Многие люди, особенно из Азербайджана и соседних регионов, сталкиваются
+        с трудностями в поиске реальных рабочих возможностей за границей. В то
+        же время многие европейские агентства испытывают трудности в поиске
+        квалифицированных и надёжных работников. Мы объединяем эти потребности с
+        помощью структурированной и прозрачной системы.
+      </p>
+      <p>
+        Наша компания работает как <strong>профессиональная сеть</strong>, в
+        которой соискатели и кадровые агентства находят друг друга — с
+        соблюдением чётких процессов, правовых норм и взаимопонимания. Мы не
+        продаём вакансии и не взимаем высоких комиссий. Вместо этого мы
+        сосредоточены на реальной помощи и честной поддержке обеих сторон.
+      </p>
+
+      <h2>Что мы делаем</h2>
+
+      <p>
+        Opoint Consulting предлагает два основных направления услуг — одно для
+        соискателей, другое для агентств:
+      </p>
+
+      <p>
+        <strong>Сопровождение — для соискателей</strong><br />
+        Мы помогаем кандидатам пройти весь путь трудоустройства за границей — от
+        подготовки до прибытия. Наши услуги включают: разъяснение вакансий и
+        условий контрактов, подготовку документов, помощь в подаче на визу и
+        подключение к проверенным агентствам.
+      </p>
+
+      <p>
+        <strong>Подбор — для кадровых агентств</strong><br />
+        Мы помогаем европейским агентствам укрепить рабочие команды с помощью
+        подготовленных и проверенных кандидатов. Мы подбираем сотрудников под
+        конкретные потребности, проверяем документы и обеспечиваем полное
+        информирование обеих сторон до начала сотрудничества.
+      </p>
+
+      <p>
+        Мы действуем в полном соответствии с международным трудовым
+        законодательством и официальными требованиями посольств по оформлению
+        виз и разрешений на работу. Хотя мы не связаны с посольствами или
+        государственными учреждениями, наша задача — убедиться, что все
+        документы оформлены правильно, официально и в соответствии с правилами —
+        чтобы и работодатель, и кандидат получили максимальные шансы на
+        успешное, легальное трудоустройство.
+      </p>
+    </section>
+
+    <section>
+      <h2>Контактная информация</h2>
+      <p><strong>Директор:</strong> Orkhan Baylarli</p>
+      <p>
+        <strong>Телефон:</strong>
+        <a href="tel:+994555622647">+994 55 562 26 47</a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:opointconsulting@gmail.com"
+          >contact@opointconsulting.com</a
+        >
+      </p>
+    </section>
+
+    <footer>
+      Opoint Consulting MMC<br />
+      Адрес: AZ2500, город Гёйгёль, Фирузабад 01, Азербайджан<br />
+      Налоговый номер (VÖEN): 7601367691<br />
+      &copy; 2025 Opoint Consulting. Все права защищены.
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("main-nav").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
